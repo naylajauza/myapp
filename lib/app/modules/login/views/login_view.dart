@@ -75,7 +75,7 @@ class LoginView extends GetView<LoginController> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
@@ -87,7 +87,7 @@ class LoginView extends GetView<LoginController> {
               ),
               child: TextButton(
                 onPressed: () {
-                  Get.to(() => RegisterView());
+                  Get.to(() => const RegisterView());
                 },
                 child: const Text(
                   'Register',

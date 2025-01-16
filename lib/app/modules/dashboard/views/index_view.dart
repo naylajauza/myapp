@@ -34,7 +34,7 @@ class IndexView extends GetView {
   ZoomTapAnimation eventList() {
     return ZoomTapAnimation(
       onTap: () {
-        Get.to(() => EventDetailView(), id: 1);
+        Get.to(() => const EventDetailView(), id: 1);
       },
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,33 +46,33 @@ class IndexView extends GetView {
             width: double.infinity,
           ),
           const SizedBox(height: 16),
-          Text(
+          const Text(
             'title',
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(height: 8),
-          Text(
+          const Text(
             'description',
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 16,
               color: Colors.grey,
             ),
           ),
           const SizedBox(height: 16),
-          Row(
+          const Row(
             children: [
-              const Icon(
+              Icon(
                 Icons.location_on,
                 color: Colors.red,
               ),
-              const SizedBox(width: 8),
+              SizedBox(width: 8),
               Expanded(
                 child: Text(
                   'location',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 16,
                     color: Colors.black,
                   ),
@@ -80,10 +80,10 @@ class IndexView extends GetView {
               ),
             ],
           ),
-          Divider(
+          const Divider(
            height: 10,
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
         ],
       ),
     );

@@ -12,24 +12,12 @@ class DashboardController extends GetxController {
   }
 
   final List<Widget> pages = [
-    IndexView(),
-    YourEventView(),
-    ProfileView(),
+    const IndexView(),
+    const YourEventView(),
+    const ProfileView(),
   ];
   
-  @override
-  void onInit() {
-    super.onInit();
-  }
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
 
 }
